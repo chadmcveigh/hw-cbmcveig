@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
   c2[4] = 'd';
   c2[5] = '!';
   c2[6] = '\n';
-  
+  simplest_mem_manager.free_chars(c2);
   cout << c1;
   char* c3 = simplest_mem_manager.alloc_chars(10);
   c3[0] = 'm';
