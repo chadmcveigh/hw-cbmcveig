@@ -23,6 +23,7 @@ char* c1 = simplest_mem_manager.alloc_chars(6);
   c2[4] = 'd';
   c2[5] = '!';
   c2[6] = '\n';
+  cout << c1;
   simplest_mem_manager.free_chars(c2);
   char* c3 = simplest_mem_manager.alloc_chars(10);
   c3[0] = 'm';
@@ -35,7 +36,6 @@ char* c1 = simplest_mem_manager.alloc_chars(6);
   c3[7] = 'y';
   c3[8] = 'e';
   c3[9] = '\n';
-  cout << c1;
 
   return 0;
 }
