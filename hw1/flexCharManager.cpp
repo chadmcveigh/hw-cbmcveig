@@ -46,7 +46,6 @@ char* flexCharManager::alloc_chars(int n){
 			used_memory[i] = temp[i];
 		}
 
-		//check valgrind
 		delete [] temp;
 	}
 
@@ -134,7 +133,7 @@ void flexCharManager::free_chars(char* p){
 			used_memory[i] = temp[i];
 		}
 
-		delete temp;
+		delete [] temp;
 
 	}
 }         
